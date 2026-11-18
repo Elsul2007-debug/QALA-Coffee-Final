@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="QALA Coffee. Fresh coffee, familiar faces, and a little room to slow down in Astana.">
+<title>Home | QALA Coffee</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/assignment5.css">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+<a class="visually-hidden-focusable position-absolute bg-white p-3" href="#main">Skip to content</a>
+<header class="sticky-top">
+<nav class="navbar navbar-expand-lg bg-white bg-opacity-75 border-bottom py-3" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="brand-symbol" aria-hidden="true">q.</span> QALA<span class="brand-coffee">COFFEE</span>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto my-3 my-md-0">
+<li class="nav-item">
+<a class="nav-link px-lg-3 active" aria-current="page" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="menu.html">Menu</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="contact.html">Contact</a>
+</li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="lab.html">Coffee Lab</a></li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="discover.html">Discover</a></li><li class="nav-item"><a class="nav-link px-lg-3" href="login.html" data-account-link>Log in</a></li></ul>
+<a class="btn btn-dark btn-sm rounded-pill px-4 py-2" href="menu.html">Find your coffee <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<section class="container py-3" aria-label="Coffee tools"><div class="d-flex flex-wrap align-items-center justify-content-between gap-3 bg-white rounded-4 p-3"><div><span class="small text-secondary">Your local moment in Astana</span><br><time id="currentDateTime" class="fw-semibold"></time></div><div class="d-flex flex-wrap gap-2"><button id="themeToggle" class="btn btn-outline-dark rounded-pill" type="button" aria-pressed="false">Night mode</button><a class="btn btn-outline-dark rounded-pill" href="signup.html">Join the club</a><button class="btn btn-dark rounded-pill" type="button" data-open-subscribe>Subscribe</button></div></div></section>
+<main id="main">
+<section class="container pb-5">
+<div class="text-center py-5">
+<p class="eyebrow mb-3">YOUR EVERYDAY, A LITTLE BETTER.</p>
+<h1 class="display-title mb-4">Good coffee.<br>
+<span class="soft-text">Great little moments.</span>
+</h1>
+<p class="intro text-secondary mx-auto mb-0">Freshly brewed. Thoughtfully made. A place to pause in the heart of Astana.</p>
+</div>
+<div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+<a class="btn btn-primary btn-lg rounded-pill px-4" href="menu.html">Explore the menu</a>
+<a class="btn btn-link btn-lg text-decoration-none" href="about.html">Meet QALA <span aria-hidden="true">↗</span>
+</a>
+</div>
+<div class="hero-photo rounded-5 overflow-hidden position-relative">
+<img src="images/hero.jpg" alt="Fresh latte with heart-shaped latte art on a wooden table" fetchpriority="high">
+<div class="photo-label px-4 py-3 rounded-pill">
+<span class="status-dot me-2">
+</span>Made with care. Served with a smile.</div>
+</div>
+<div class="d-flex justify-content-between flex-wrap gap-2 text-secondary small pt-3 px-2">
+<span>YOUR DAILY DOSE OF GOOD.</span>
+<span>ASTANA, KAZAKHSTAN · EST. 2026</span>
+</div>
+</section>
+<section class="container py-5">
+<div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+<div>
+<p class="eyebrow mb-2">FIND YOUR FAVORITE</p>
+<h2 class="section-title mb-0">The usual. Unusually good.</h2>
+</div>
+<a href="menu.html" class="btn btn-link text-decoration-none px-0">See the full menu ↗</a>
+</div>
+<div class="row g-4 card-group" id="productGrid">
+<div class="col-12 col-sm-6 col-lg-4" >
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/espres.jpg" alt="Espresso" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Espresso</h3>
+<p class="text-secondary mb-4">Small cup. Bold character.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">900 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Espresso">Choose <span class="visually-hidden">Espresso</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" >
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/capuchi.jpg" alt="Cappuccino" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Cappuccino</h3>
+<p class="text-secondary mb-4">A little espresso. A cloud of milk.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,400 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Cappuccino">Choose <span class="visually-hidden">Cappuccino</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" >
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/latte.jpg" alt="Latte" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Latte</h3>
+<p class="text-secondary mb-4">Your softer side of the morning.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,700 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Latte">Choose <span class="visually-hidden">Latte</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="container py-5">
+<div class="row g-4">
+<div class="col-12 col-lg-6">
+<article class="feature-panel dark-panel h-100 rounded-5 p-4 p-sm-5 d-flex flex-column">
+<p class="eyebrow text-white-50 mb-4">MORE THAN A COFFEE BREAK</p>
+<h2 class="section-title">Your city.<br>Your corner.<br>Your QALA.</h2>
+<p class="text-white-75 mt-3 mb-5">A familiar face. Your favorite cup. A comfortable place to make yourself at home.</p>
+<a href="about.html" class="btn btn-light rounded-pill align-self-start px-4 mt-auto">Our story ↗</a>
+</article>
+</div>
+<div class="col-12 col-lg-6">
+<article class="feature-panel rounded-5 overflow-hidden position-relative">
+<img class="w-100 feature-photo" src="images/atmos.jpg" alt="Warm café interior with wooden tables and comfortable seating" loading="lazy">
+<div class="photo-label px-4 py-3 rounded-pill">A little room to slow down.</div>
+</article>
+</div>
+</div>
+</section>
+<section class="container py-5">
+<p class="eyebrow mb-2">LIFE, ONE CUP AT A TIME</p>
+<h2 class="section-title mb-4">Take a closer look.</h2>
+<div id="coffeeCarousel" class="carousel slide overflow-hidden rounded-5" role="region" aria-roledescription="carousel" aria-label="Coffee gallery">
+<div class="carousel-indicators">
+<button type="button" class="btn active" data-bs-target="#coffeeCarousel" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true">
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="1" aria-label="Slide 2" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="2" aria-label="Slide 3" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="3" aria-label="Slide 4" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="4" aria-label="Slide 5" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="5" aria-label="Slide 6" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="6" aria-label="Slide 7" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="7" aria-label="Slide 8" >
+</button>
+<button type="button" class="btn " data-bs-target="#coffeeCarousel" data-bs-slide-to="8" aria-label="Slide 9" >
+</button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 9">
+<img src="images/hero.jpg" class="d-block w-100 gallery-image" alt="A morning worth slowing down for." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 01 / 09</p>
+<h3 class="h2 fw-semibold">A morning worth slowing down for.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="2 of 9">
+<img src="images/espres.jpg" class="d-block w-100 gallery-image" alt="Small cup. Big character." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 02 / 09</p>
+<h3 class="h2 fw-semibold">Small cup. Big character.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="3 of 9">
+<img src="images/capuchi.jpg" class="d-block w-100 gallery-image" alt="The art of a little everyday joy." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 03 / 09</p>
+<h3 class="h2 fw-semibold">The art of a little everyday joy.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="4 of 9">
+<img src="images/latte.jpg" class="d-block w-100 gallery-image" alt="Made for your softer mornings." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 04 / 09</p>
+<h3 class="h2 fw-semibold">Made for your softer mornings.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="5 of 9">
+<img src="images/coffee4.jpg" class="d-block w-100 gallery-image" alt="Leave a little room for something sweet." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 05 / 09</p>
+<h3 class="h2 fw-semibold">Leave a little room for something sweet.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="6 of 9">
+<img src="images/coffee5.jpg" class="d-block w-100 gallery-image" alt="Find your moment of calm." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 06 / 09</p>
+<h3 class="h2 fw-semibold">Find your moment of calm.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="7 of 9">
+<img src="images/coffee6.jpg" class="d-block w-100 gallery-image" alt="Good things take their time." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 07 / 09</p>
+<h3 class="h2 fw-semibold">Good things take their time.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="8 of 9">
+<img src="images/coffee8.jpg" class="d-block w-100 gallery-image" alt="The perfect afternoon companion." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 08 / 09</p>
+<h3 class="h2 fw-semibold">The perfect afternoon companion.</h3>
+</div>
+</div>
+<div class="carousel-item " role="group" aria-roledescription="slide" aria-label="9 of 9">
+<img src="images/coffee9.jpg" class="d-block w-100 gallery-image" alt="Back to the simple things." loading="lazy">
+<div class="gallery-shade">
+</div>
+<div class="carousel-caption text-start">
+<p class="eyebrow text-white mb-2">THE QALA MOMENTS · 09 / 09</p>
+<h3 class="h2 fw-semibold">Back to the simple things.</h3>
+</div>
+</div>
+</div>
+<button class="btn carousel-control-prev" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true">
+</span>
+<span class="visually-hidden">Previous slide</span>
+</button>
+<button class="btn carousel-control-next" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true">
+</span>
+<span class="visually-hidden">Next slide</span>
+</button>
+</div>
+</section>
+<section class="container text-center py-5">
+<h2 class="section-title mb-3">Your next good moment<br>starts here.</h2>
+<p class="text-secondary mb-4">Come for the coffee. Stay for a while.</p>
+<a href="contact.html" class="btn btn-primary rounded-pill px-4 py-3">Say hello ↗</a>
+</section>
+</main>
+<footer class="border-top py-5 mt-5">
+<div class="container">
+<div class="row gy-4 align-items-start">
+<div class="col-md-5">
+<a href="index.html" class="text-decoration-none text-dark fw-bold fs-4">QALA COFFEE<span class="text-secondary">.</span>
+</a>
+<p class="text-secondary mt-2 mb-0">A little pause. A better day.</p>
+</div>
+<div class="col-sm-6 col-md-3">
+<p class="small fw-semibold mb-2">EXPLORE</p>
+<a class="footer-link d-block mb-2" href="menu.html">Our menu</a>
+<a class="footer-link d-block" href="about.html">Our story</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<p class="small fw-semibold mb-2">COME SAY HELLO</p>
+<p class="text-secondary mb-2">Astana, Kazakhstan</p>
+<a class="footer-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<div class="border-top mt-4 pt-4 d-flex flex-wrap justify-content-between gap-2 small text-secondary">
+<span>© 2026 QALA Coffee · Student project</span>
+<span>Survae · Yelsultan Tashkaraev &amp; Nurzhan Zholaman · SE-2515</span>
+</div>
+</div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js">
+</script>
+<script src="js/app.js">
+</script>
+<dialog id="subscribeDialog" aria-labelledby="subscribeTitle"><div class="p-4 p-sm-5"><button class="btn-close float-end" type="button" data-close-subscribe aria-label="Close subscription form"></button><p class="eyebrow">THE QALA LETTER</p><h2 id="subscribeTitle" class="h2">A little coffee news.</h2><p class="text-secondary">Join our newsletter demo.</p><form id="subscribeForm" novalidate><label class="form-label" for="subscribeEmail">Email address *</label><input id="subscribeEmail" name="email" type="text" inputmode="email" class="form-control py-3" placeholder="you@example.com" autocomplete="email" aria-describedby="subscribeError"><p id="subscribeError" class="field-error" aria-live="polite"></p><button type="submit" class="btn btn-dark rounded-pill w-100">Subscribe</button><p id="subscribeResult" class="mt-3 mb-0" role="status"></p></form></div></dialog>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

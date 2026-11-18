@@ -1,0 +1,1 @@
+Separate browser endpoint check, 15 November 2026. Open-Meteo returned current.time=2026-11-15T23:00, temperature_2m=-3.0, apparent_temperature=-7.2, precipitation=0.00, weather_code=0. Local test process live requests were blocked; hosted end-to-end verification remains pending. Success screenshot uses a controlled fixture, not live data.

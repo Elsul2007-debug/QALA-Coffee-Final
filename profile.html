@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="QALA Coffee. Fresh coffee, familiar faces, and a little room to slow down in Astana.">
+<title>Profile | QALA Coffee</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/assignment5.css">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+<a class="visually-hidden-focusable position-absolute bg-white p-3" href="#main">Skip to content</a>
+<header class="sticky-top">
+<nav class="navbar navbar-expand-lg bg-white bg-opacity-75 border-bottom py-3" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="brand-symbol" aria-hidden="true">q.</span> QALA<span class="brand-coffee">COFFEE</span>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto my-3 my-md-0">
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="menu.html">Menu</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 " href="contact.html">Contact</a>
+</li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="lab.html">Coffee Lab</a></li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="discover.html">Discover</a></li><li class="nav-item"><a class="nav-link px-lg-3" href="login.html" data-account-link>Log in</a></li></ul>
+<a class="btn btn-dark btn-sm rounded-pill px-4 py-2" href="menu.html">Find your coffee <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<section class="container py-3" aria-label="Coffee tools"><div class="d-flex flex-wrap align-items-center justify-content-between gap-3 bg-white rounded-4 p-3"><div><span class="small text-secondary">Your local moment in Astana</span><br><time id="currentDateTime" class="fw-semibold"></time></div><div class="d-flex flex-wrap gap-2"><button id="themeToggle" class="btn btn-outline-dark rounded-pill" type="button" aria-pressed="false">Night mode</button><a class="btn btn-outline-dark rounded-pill" href="signup.html">Join the club</a><button class="btn btn-dark rounded-pill" type="button" data-open-subscribe>Subscribe</button></div></div></section>
+<main id="main"><section class="container py-5"><div class="row g-4 g-lg-5 align-items-start"><div class="col-lg-5"><p class="eyebrow">YOUR QALA CLUB</p><h1 class="display-title account-title">Your coffee.<br>Your corner.</h1><p class="intro text-secondary my-4">A little pause. A better day. Your favorite coffee moments, all in one place.</p><img class="w-100 rounded-5 account-photo" src="images/latte.jpg" alt="QALA latte with delicate coffee art"><p class="small text-secondary mt-3">Student demo. Accounts stay in this browser. Use a made-up password, never a real one.</p></div><div class="col-lg-7"><div class="bg-white rounded-5 p-4 p-sm-5"><div id="profileGuest"><h2 class="h3">Make yourself at home.</h2><p class="text-secondary">Log in to view your profile and saved coffee favorites.</p><a class="btn btn-primary rounded-pill" href="login.html">Log in</a> <a href="signup.html" class="btn btn-link">Join the club</a></div><div id="profileMember" hidden><p class="eyebrow">MEMBER PROFILE</p><h2 id="profileName" class="h2"></h2><dl class="profile-details"><dt>Email</dt><dd id="profileEmail"></dd><dt>Phone</dt><dd id="profilePhone"></dd></dl><hr><h3 class="h4">Your saved favorites</h3><ul id="profileFavorites" class="ps-3"></ul><p class="small text-secondary">Favorites are saved per account. Discover your next favorite and return here.</p><a class="btn btn-primary rounded-pill" href="discover.html">Discover coffee</a> <button id="logoutButton" class="btn btn-outline-dark rounded-pill" type="button">Log out</button><p id="accountStatus" role="status" class="mt-3"></p></div></div></div></div></section></main>
+<footer class="border-top py-5 mt-5">
+<div class="container">
+<div class="row gy-4 align-items-start">
+<div class="col-md-5">
+<a href="index.html" class="text-decoration-none text-dark fw-bold fs-4">QALA COFFEE<span class="text-secondary">.</span>
+</a>
+<p class="text-secondary mt-2 mb-0">A little pause. A better day.</p>
+</div>
+<div class="col-sm-6 col-md-3">
+<p class="small fw-semibold mb-2">EXPLORE</p>
+<a class="footer-link d-block mb-2" href="menu.html">Our menu</a>
+<a class="footer-link d-block" href="about.html">Our story</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<p class="small fw-semibold mb-2">COME SAY HELLO</p>
+<p class="text-secondary mb-2">Astana, Kazakhstan</p>
+<a class="footer-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<div class="border-top mt-4 pt-4 d-flex flex-wrap justify-content-between gap-2 small text-secondary">
+<span>© 2026 QALA Coffee · Student project</span>
+<span>Survae · Yelsultan Tashkaraev &amp; Nurzhan Zholaman · SE-2515</span>
+</div>
+</div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js">
+</script>
+<script src="js/app.js">
+</script>
+<dialog id="subscribeDialog" aria-labelledby="subscribeTitle"><div class="p-4 p-sm-5"><button class="btn-close float-end" type="button" data-close-subscribe aria-label="Close subscription form"></button><p class="eyebrow">THE QALA LETTER</p><h2 id="subscribeTitle" class="h2">A little coffee news.</h2><p class="text-secondary">Join our newsletter demo.</p><form id="subscribeForm" novalidate><label class="form-label" for="subscribeEmail">Email address *</label><input id="subscribeEmail" name="email" type="text" inputmode="email" class="form-control py-3" placeholder="you@example.com" autocomplete="email" aria-describedby="subscribeError"><p id="subscribeError" class="field-error" aria-live="polite"></p><button type="submit" class="btn btn-dark rounded-pill w-100">Subscribe</button><p id="subscribeResult" class="mt-3 mb-0" role="status"></p></form></div></dialog>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

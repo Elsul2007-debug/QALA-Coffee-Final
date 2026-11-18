@@ -1,0 +1,16 @@
+/* Final-project additions preserve the original QALA palette and rounded layouts. */
+[hidden] { display:none!important; }
+.account-title { font-size:clamp(2.8rem,5vw,4.5rem); }
+.account-photo { max-height:310px; object-fit:cover; }
+.profile-details dd { overflow-wrap:anywhere; margin-bottom:1rem; }
+html[data-theme="night"] { color-scheme:dark; }
+html[data-theme="night"] .btn-link { --bs-btn-color:#7ebaff; --bs-btn-hover-color:#b3d7ff; }
+html[data-theme="night"] a:not(.btn):not(.navbar-brand):not(.nav-link):not(.footer-link) { color:#8bc2ff; }
+html[data-theme="night"] .alert-success { background:#173f32; color:#d8f3e5; border-color:#438267; }
+html[data-theme="night"] body { background:var(--paper); color:var(--ink); }
+html[data-theme="night"] .bg-light { background:#25272e!important; }
+html[data-theme="night"] .text-white-50 { color:#bdc0c8!important; }
+html[data-theme="night"] .btn-primary { --bs-btn-bg:#0769ce; }
+.form-control, .form-select { min-width:0; }
+@media(min-width:992px) { .navbar .nav-link { padding-left:.65rem!important; padding-right:.65rem!important; } }
+@media(max-width:575px) { .gallery-thumbs { flex-wrap:wrap; } .photo-label { left:16px; bottom:16px; max-width:calc(100% - 32px); } }

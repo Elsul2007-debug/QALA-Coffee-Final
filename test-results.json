@@ -1,0 +1,98 @@
+[
+  {
+    "name": "All 9 pages at 375px: no horizontal overflow / native form validation / broken loaded images",
+    "details": "PASS"
+  },
+  {
+    "name": "All 9 pages at 768px: no horizontal overflow / native form validation / broken loaded images",
+    "details": "PASS"
+  },
+  {
+    "name": "All 9 pages at 1440px: no horizontal overflow / native form validation / broken loaded images",
+    "details": "PASS"
+  },
+  {
+    "name": "Signup rejects blank fields",
+    "details": "PASS"
+  },
+  {
+    "name": "Email / phone / complexity / confirmation validation",
+    "details": "PASS"
+  },
+  {
+    "name": "Signup stores account and redirects to login",
+    "details": "PASS"
+  },
+  {
+    "name": "Login rejects wrong credentials",
+    "details": "PASS"
+  },
+  {
+    "name": "Login redirects and profile displays saved details",
+    "details": "PASS"
+  },
+  {
+    "name": "Duplicate email rejected case-insensitively",
+    "details": "PASS"
+  },
+  {
+    "name": "Search filters and persists after reload",
+    "details": "PASS"
+  },
+  {
+    "name": "Search empty state and reset",
+    "details": "PASS"
+  },
+  {
+    "name": "Favorites persist and appear in profile",
+    "details": "PASS"
+  },
+  {
+    "name": "Theme persists between pages and reloads",
+    "details": "PASS"
+  },
+  {
+    "name": "Subscribe validation and dialog close",
+    "details": "PASS"
+  },
+  {
+    "name": "Contact required fields and consent",
+    "details": "PASS"
+  },
+  {
+    "name": "Contact preview, coffee query and reset",
+    "details": "PASS"
+  },
+  {
+    "name": "Menu category filter",
+    "details": "PASS"
+  },
+  {
+    "name": "Coffee Lab wizard, tasting total and reset",
+    "details": "PASS"
+  },
+  {
+    "name": "Logout and guest profile guard",
+    "details": "PASS"
+  },
+  {
+    "name": "Mobile navigation opens",
+    "details": "PASS"
+  },
+  {
+    "name": "API controlled success + recommendation",
+    "details": "PASS"
+  },
+  {
+    "name": "API network error hides stale data and permits retry",
+    "details": "PASS"
+  },
+  {
+    "name": "Live external API",
+    "details": "Weather is unavailable right now. Check your connection and try again. Our menu is still available."
+  },
+  {
+    "name": "JavaScript page errors",
+    "details": "0"
+  }
+]

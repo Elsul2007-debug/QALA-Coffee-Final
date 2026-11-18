@@ -1,0 +1,74 @@
+/* Assignment 3: Bootstrap owns margins/padding and layout.
+   This file controls brand styling, image geometry and responsive typography. */
+:root { --ink: #1d1d1f; --muted: #656568; --paper: #f5f5f7; --bs-body-color: var(--ink); --bs-body-bg: var(--paper); --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { -webkit-font-smoothing: antialiased; }
+header { backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
+a { text-underline-offset: 4px; }
+:focus-visible { outline: 3px solid #0066cc !important; outline-offset: 4px; }
+.visually-hidden-focusable { z-index: 1100; }
+.navbar-brand { letter-spacing: -.05em; font-size: 1.13rem; }
+.brand-symbol { display: inline-grid; place-items: center; color: #fff; background: var(--ink); width: 30px; height: 30px; border-radius: 9px; font-size: 24px; }
+.brand-coffee { font-size: .62rem; letter-spacing: .14em; }
+.nav-link { font-size: .82rem; color: #57575b; }
+.nav-link.active { font-weight: 600; }
+.eyebrow { font-size: .68rem; font-weight: 650; letter-spacing: .15em; color: #646467; }
+.display-title { font-size: 2.8rem; font-weight: 650; letter-spacing: -.065em; line-height: 1.04; }
+.section-title { font-size: 2rem; font-weight: 650; letter-spacing: -.045em; line-height: 1.12; }
+.intro { font-size: 1.05rem; line-height: 1.55; max-width: 610px; }
+.soft-text { color: #78787b; }
+.text-secondary { color: var(--muted) !important; }
+.btn { transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { --bs-btn-bg: #0066cc; --bs-btn-border-color: #0066cc; --bs-btn-hover-bg: #0056ad; --bs-btn-hover-border-color: #0056ad; --bs-btn-active-bg: #004e9c; }
+.btn-link { --bs-btn-color: #0066cc; --bs-btn-hover-color: #004e9c; }
+.btn-lg { font-size: 1rem; }
+.hero-photo { height: 330px; }
+.hero-photo > img { height: 100%; width: 100%; object-fit: cover; object-position: center 57%; }
+.photo-label { position: absolute; left: 24px; bottom: 24px; max-width: calc(100% - 48px); background: rgba(255,255,255,.92); backdrop-filter: blur(12px); font-size: .75rem; color: var(--ink); }
+.status-dot { display: inline-block; height: 7px; width: 7px; border-radius: 50%; background: #307246; }
+.product-card { border-radius: 28px; transition: transform .3s ease, box-shadow .3s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 14px 35px #0000000a; }
+.product-image { overflow: hidden; background: #ebe7e2; }
+.product-image img { aspect-ratio: 1.3; width: 100%; object-fit: cover; transition: transform .5s ease; }
+.product-card:hover img { transform: scale(1.035); }
+/* Use card-group with Bootstrap grid, keeping its responsive columns in control. */
+#productGrid.card-group > [class*="col-"] { flex-shrink: 0; }
+.dark-panel { background: #202122; color: white; }
+.text-white-75 { color: #d2d2d4; }
+.feature-panel { min-height: 440px; }
+.feature-photo { height: 440px; object-fit: cover; }
+.gallery-image { height: 360px; object-fit: cover; }
+.gallery-shade { position: absolute; inset: 0; background: linear-gradient(transparent 25%,rgba(0,0,0,.75)); }
+.carousel-caption { bottom: 2rem; left: 12%; right: 12%; }
+.carousel-control-prev, .carousel-control-next { width: 10%; opacity: 1; }
+.carousel-control-prev-icon, .carousel-control-next-icon { border-radius: 50%; background-color: #0009; background-size: 60%; width: 38px; height: 38px; }
+.carousel-indicators .btn { border-radius: 4px; min-height: 5px; }
+.about-hero { height: 330px; object-fit: cover; }
+.value-number { font-size: 2.5rem; letter-spacing: -.05em; color: #75757a; }
+.process-image { object-fit: cover; min-height: 400px; }
+.avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; }
+.contact-photo { height: 210px; object-fit: cover; }
+.form-control, .form-select, .input-group-text { background-color: #f8f8fa; border-color: #d2d2d7; border-radius: 12px; }
+.form-control:focus, .form-select:focus { background: #fff; border-color: #0066cc; }
+.form-label { font-size: .85rem; font-weight: 500; }
+.footer-link { color: #535357; text-decoration: none; font-size: .85rem; }
+.footer-link:hover { color: #0066cc; text-decoration: underline; }
+@media (min-width: 768px) { .display-title { font-size: 4.3rem; } .section-title { font-size: 2.6rem; } .intro { font-size: 1.2rem; } .hero-photo { height: 450px; } .gallery-image { height: 500px; } .about-hero { height: 460px; } }
+@media (min-width: 1200px) { .container { max-width: 1120px; } .display-title { font-size: 5.5rem; } .section-title { font-size: 3rem; } .intro { font-size: 1.3rem; } .hero-photo { height: 490px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+/* Assignment 4 interactions */
+body { transition:background-color .35s ease; }
+.field-error { color:#b42318; font-size:.85rem; min-height:1.3em; margin:.4rem 0 0; }
+[aria-invalid="true"] { border-color:#b42318; }
+dialog { border:0; border-radius:28px; padding:0; width:min(520px,calc(100% - 32px)); max-height:90vh; color:var(--ink); }
+dialog::backdrop { background:#15151588; backdrop-filter:blur(5px); }
+body.modal-open { overflow:hidden; }
+.faq-list { max-width:850px; }
+.faq-item { background:#fff; border-radius:20px; margin-bottom:12px; overflow:hidden; }
+.faq-question { border:0; background:transparent; width:100%; text-align:left; padding:24px; display:flex; justify-content:space-between; gap:20px; font:inherit; font-size:1.05rem; color:var(--ink); }
+.faq-answer { display:grid; grid-template-rows:0fr; transition:grid-template-rows .3s ease; visibility:hidden; }
+.faq-answer > div { overflow:hidden; }
+.faq-answer p { padding:0 24px 24px; margin:0; color:var(--muted); }
+.faq-answer.open { grid-template-rows:1fr; visibility:visible; }

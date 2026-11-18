@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="QALA Coffee. Fresh coffee, familiar faces, and a little room to slow down in Astana.">
+<title>Coffee Lab | QALA Coffee</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/assignment5.css">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+<a class="visually-hidden-focusable position-absolute bg-white p-3" href="#main">Skip to content</a>
+<header class="sticky-top">
+<nav class="navbar navbar-expand-lg bg-white bg-opacity-75 border-bottom py-3" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="brand-symbol" aria-hidden="true">q.</span> QALA<span class="brand-coffee">COFFEE</span>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto my-3 my-md-0">
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="menu.html">Menu</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3" href="about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="contact.html">Contact</a>
+</li>
+<li class="nav-item"><a class="nav-link px-lg-3 active" aria-current="page" href="lab.html">Coffee Lab</a></li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="discover.html">Discover</a></li><li class="nav-item"><a class="nav-link px-lg-3" href="login.html" data-account-link>Log in</a></li></ul>
+<a class="btn btn-dark btn-sm rounded-pill px-4 py-2" href="menu.html">Find your coffee <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<section class="container py-3" aria-label="Coffee tools"><div class="d-flex flex-wrap align-items-center justify-content-between gap-3 bg-white rounded-4 p-3"><div><span class="small text-secondary">Your local moment in Astana</span><br><time id="currentDateTime" class="fw-semibold"></time></div><div class="d-flex flex-wrap gap-2"><button id="themeToggle" class="btn btn-outline-dark rounded-pill" type="button" aria-pressed="false">Night mode</button><a class="btn btn-outline-dark rounded-pill" href="signup.html">Join the club</a><button class="btn btn-dark rounded-pill" type="button" data-open-subscribe>Subscribe</button></div></div></section>
+<main id="main">
+<section class="container py-5 text-center"><p class="eyebrow">A LITTLE CURIOSITY. A BETTER CUP.</p><h1 class="display-title">Your coffee.<br>Your way.</h1><p class="intro text-secondary mx-auto">Explore the beans, build a brew, and find your next favorite.</p><p class="small text-secondary">Coffee Lab · Use arrow keys to move between navigation links.</p></section>
+<section id="ratingSection" class="container pb-5"><div class="lab-panel p-4 p-sm-5"><div class="row align-items-center g-4"><div class="col-md-7"><p class="eyebrow">MAKE YOURSELF AT HOME</p><h2 class="h2">How is your QALA moment?</h2><p class="text-secondary mb-0">Tap a star to leave a local demo rating.</p></div><div class="col-md-5"><div class="rating-stars" role="group" aria-label="Rate your QALA moment"><button type="button" class="rating-star" data-rating="1" aria-label="Rate 1 out of 5" aria-pressed="false">★</button><button type="button" class="rating-star" data-rating="2" aria-label="Rate 2 out of 5" aria-pressed="false">★</button><button type="button" class="rating-star" data-rating="3" aria-label="Rate 3 out of 5" aria-pressed="false">★</button><button type="button" class="rating-star" data-rating="4" aria-label="Rate 4 out of 5" aria-pressed="false">★</button><button type="button" class="rating-star" data-rating="5" aria-label="Rate 5 out of 5" aria-pressed="false">★</button></div><p id="ratingMessage" role="status" class="small mt-2 mb-0">No rating selected yet.</p></div></div></div></section>
+<section id="gallerySection" class="container py-4"><div class="row g-4 align-items-center"><div class="col-md-5"><p class="eyebrow">A CLOSER LOOK</p><h2 class="section-title">Three ways<br>to start your day.</h2><p class="text-secondary">Choose a thumbnail to explore a different coffee.</p><p id="galleryCaption" class="fw-semibold" aria-live="polite">Espresso · Small cup. Bold character.</p><div class="gallery-thumbs" role="group" aria-label="Choose a coffee photo"><button class="gallery-thumb" type="button" data-image="images/espres.jpg" data-caption="Espresso · Small cup. Bold character." data-alt="Espresso" aria-label="Show Espresso" aria-pressed="true"><img src="images/espres.jpg" alt="" loading="lazy"></button><button class="gallery-thumb" type="button" data-image="images/capuchi.jpg" data-caption="Cappuccino · Espresso meets a cloud of milk." data-alt="Cappuccino" aria-label="Show Cappuccino" aria-pressed="false"><img src="images/capuchi.jpg" alt="" loading="lazy"></button><button class="gallery-thumb" type="button" data-image="images/latte.jpg" data-caption="Latte · Your softer side of the morning." data-alt="Latte" aria-label="Show Latte" aria-pressed="false"><img src="images/latte.jpg" alt="" loading="lazy"></button></div></div><div class="col-md-7"><img id="galleryMain" class="lab-gallery-image" src="images/espres.jpg" alt="Espresso"></div></div></section>
+<section id="brewSection" class="container py-5"><div class="lab-panel p-4 p-sm-5"><div class="row g-4"><div class="col-md-5"><p class="eyebrow">YOUR PERSONAL BREW</p><h2 class="section-title">Find your<br>coffee rhythm.</h2><p class="text-secondary">Three small steps. One cup made your way.</p><p class="small text-secondary">A frontend demo. No order is placed.</p><div class="brew-progress" aria-hidden="true"><span id="brewProgressBar"></span></div></div><div class="col-md-7"><form id="brewForm" novalidate><p id="stepLabel" class="eyebrow" aria-live="polite">STEP 1 OF 3</p><div data-brew-step><h3 class="h4" tabindex="-1">Choose your coffee.</h3><label class="form-label" for="brewName">Your name *</label><input class="form-control mb-3" id="brewName" autocomplete="name" placeholder="First name"><label class="form-label" for="brewDrink">Coffee</label><select class="form-select" id="brewDrink"><option>Espresso</option><option>Cappuccino</option><option>Latte</option></select></div><div data-brew-step hidden><h3 class="h4" tabindex="-1">Make it yours.</h3><label class="form-label" for="brewMilk">Milk preference</label><select class="form-select mb-3" id="brewMilk"><option>Regular milk</option><option>Oat milk</option><option>No milk</option></select><label class="form-label" for="brewSize">Size</label><select class="form-select" id="brewSize"><option>Regular</option><option>Large</option></select></div><div data-brew-step hidden><h3 class="h4" tabindex="-1">Your coffee moment.</h3><p id="brewSummary" class="brew-summary"></p><p class="small text-secondary">Click Finish to confirm your local preview.</p></div><p id="brewError" class="field-error" role="alert"></p><div class="d-flex flex-wrap gap-2 mt-3"><button id="brewBack" class="btn btn-outline-dark rounded-pill" type="button" disabled>Back</button><button id="brewNext" class="btn btn-primary rounded-pill" type="button">Next</button><button id="brewReset" class="btn btn-link" type="button">Start again</button></div><p id="brewResult" class="mt-3 mb-0" role="status"></p></form></div></div></div></section>
+<section id="tastingSection" class="container py-4"><p class="eyebrow">YOUR LITTLE TASTING LIST</p><h2 class="section-title mb-3">Pick a few favorites.</h2><p class="text-secondary">Explore our demo menu and build a local tasting list.</p><div class="d-flex flex-wrap gap-2 mb-3" role="group" aria-label="Filter tasting menu"><button class="btn btn-dark rounded-pill" data-lab-filter="all" aria-pressed="true">All</button><button class="btn btn-outline-dark rounded-pill" data-lab-filter="coffee" aria-pressed="false">Coffee</button><button class="btn btn-outline-dark rounded-pill" data-lab-filter="tea" aria-pressed="false">Tea</button><button class="btn btn-outline-dark rounded-pill" data-lab-filter="dessert" aria-pressed="false">Dessert</button></div><p id="labFilterStatus" role="status" class="small text-secondary"></p><div id="tastingGrid" class="row g-3"></div><div id="tastingSummary" class="lab-panel p-4 mt-4"><h3 class="h5">Your tasting list</h3><p id="tastingItems" class="text-secondary">Your list is empty.</p><p id="tastingTotal" class="fw-semibold" role="status">Total: 0 ₸</p><button id="clearTasting" class="btn btn-outline-dark rounded-pill" type="button">Clear list</button></div><p class="small text-secondary mt-3">Tea and dessert prices are illustrative. This demo does not place orders.</p></section>
+<section id="soundSection" class="container py-5"><div class="lab-panel p-4 p-sm-5 text-center"><p class="eyebrow">ONE LAST LITTLE MOMENT</p><h2 class="section-title">A sound for your coffee break.</h2><p class="text-secondary">Tap to hear a short, gentle notification.</p><button id="playSound" class="btn btn-primary rounded-pill px-4" type="button">Play coffee chime</button><div id="coffeeCup" class="coffee-cup mt-4" aria-hidden="true">☕</div><p id="soundStatus" class="small mt-2 mb-0" role="status">Sound plays only when you press the button.</p><audio id="coffeeAudio" src="audio/coffee-chime.wav" preload="none"></audio></div></section>
+</main>
+<footer class="border-top py-5 mt-5">
+<div class="container">
+<div class="row gy-4 align-items-start">
+<div class="col-md-5">
+<a href="index.html" class="text-decoration-none text-dark fw-bold fs-4">QALA COFFEE<span class="text-secondary">.</span>
+</a>
+<p class="text-secondary mt-2 mb-0">A little pause. A better day.</p>
+</div>
+<div class="col-sm-6 col-md-3">
+<p class="small fw-semibold mb-2">EXPLORE</p>
+<a class="footer-link d-block mb-2" href="menu.html">Our menu</a>
+<a class="footer-link d-block" href="about.html">Our story</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<p class="small fw-semibold mb-2">COME SAY HELLO</p>
+<p class="text-secondary mb-2">Astana, Kazakhstan</p>
+<a class="footer-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<div class="border-top mt-4 pt-4 d-flex flex-wrap justify-content-between gap-2 small text-secondary">
+<span>© 2026 QALA Coffee · Student project</span>
+<span>Survae · Yelsultan Tashkaraev &amp; Nurzhan Zholaman · SE-2515</span>
+</div>
+</div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js">
+</script>
+<script src="js/app.js">
+</script>
+<dialog id="subscribeDialog" aria-labelledby="subscribeTitle"><div class="p-4 p-sm-5"><button class="btn-close float-end" type="button" data-close-subscribe aria-label="Close subscription form"></button><p class="eyebrow">THE QALA LETTER</p><h2 id="subscribeTitle" class="h2">A little coffee news.</h2><p class="text-secondary">Join our newsletter demo.</p><form id="subscribeForm" novalidate><label class="form-label" for="subscribeEmail">Email address *</label><input id="subscribeEmail" name="email" type="text" inputmode="email" class="form-control py-3" placeholder="you@example.com" autocomplete="email" aria-describedby="subscribeError"><p id="subscribeError" class="field-error" aria-live="polite"></p><button type="submit" class="btn btn-dark rounded-pill w-100">Subscribe</button><p id="subscribeResult" class="mt-3 mb-0" role="status"></p></form></div></dialog>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

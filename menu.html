@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="QALA Coffee. Fresh coffee, familiar faces, and a little room to slow down in Astana.">
+<title>Menu | QALA Coffee</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/assignment5.css">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+<a class="visually-hidden-focusable position-absolute bg-white p-3" href="#main">Skip to content</a>
+<header class="sticky-top">
+<nav class="navbar navbar-expand-lg bg-white bg-opacity-75 border-bottom py-3" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="brand-symbol" aria-hidden="true">q.</span> QALA<span class="brand-coffee">COFFEE</span>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto my-3 my-md-0">
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 active" aria-current="page" href="menu.html">Menu</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-lg-3 "  href="contact.html">Contact</a>
+</li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="lab.html">Coffee Lab</a></li>
+<li class="nav-item"><a class="nav-link px-lg-3" href="discover.html">Discover</a></li><li class="nav-item"><a class="nav-link px-lg-3" href="login.html" data-account-link>Log in</a></li></ul>
+<a class="btn btn-dark btn-sm rounded-pill px-4 py-2" href="menu.html">Find your coffee <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<section class="container py-3" aria-label="Coffee tools"><div class="d-flex flex-wrap align-items-center justify-content-between gap-3 bg-white rounded-4 p-3"><div><span class="small text-secondary">Your local moment in Astana</span><br><time id="currentDateTime" class="fw-semibold"></time></div><div class="d-flex flex-wrap gap-2"><button id="themeToggle" class="btn btn-outline-dark rounded-pill" type="button" aria-pressed="false">Night mode</button><a class="btn btn-outline-dark rounded-pill" href="signup.html">Join the club</a><button class="btn btn-dark rounded-pill" type="button" data-open-subscribe>Subscribe</button></div></div></section>
+<main id="main">
+<section class="container py-4">
+<div class="text-center py-5">
+<p class="eyebrow mb-3">THE QALA MENU</p>
+<h1 class="display-title mb-4">Find your daily ritual.</h1>
+<p class="intro text-secondary mx-auto mb-0">Bold, smooth, or something sweet. There’s a little something for every kind of day.</p>
+</div>
+<div class="text-center mb-5">
+<div class="btn-group" role="group" aria-label="Filter menu">
+<button class="btn btn-dark px-3 px-sm-4" data-filter="all" aria-pressed="true">All</button>
+<button class="btn btn-outline-dark px-3 px-sm-4" data-filter="coffee" aria-pressed="false">Coffee</button>
+<button class="btn btn-outline-dark px-3 px-sm-4" data-filter="tea" aria-pressed="false">Tea</button>
+<button class="btn btn-outline-dark px-3 px-sm-4" data-filter="dessert" aria-pressed="false">Desserts</button>
+</div>
+<p id="filterStatus" class="small text-secondary mt-3 mb-0" role="status">6 favorites, made for you.</p>
+</div>
+<div class="row g-4 card-group" id="productGrid">
+<div class="col-12 col-sm-6 col-lg-4" data-category="coffee">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/espres.jpg" alt="Espresso" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Espresso</h3>
+<p class="text-secondary mb-4">Small cup. Bold character.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">900 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Espresso">Choose <span class="visually-hidden">Espresso</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" data-category="coffee">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/capuchi.jpg" alt="Cappuccino" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Cappuccino</h3>
+<p class="text-secondary mb-4">A little espresso. A cloud of milk.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,400 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Cappuccino">Choose <span class="visually-hidden">Cappuccino</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" data-category="coffee">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/latte.jpg" alt="Latte" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">THE CLASSICS</p>
+<h3 class="h4 fw-semibold">Latte</h3>
+<p class="text-secondary mb-4">Your softer side of the morning.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,700 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Latte">Choose <span class="visually-hidden">Latte</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" data-category="tea">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/coffee5.jpg" alt="Green tea" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">SOMETHING LIGHT</p>
+<h3 class="h4 fw-semibold">Green tea</h3>
+<p class="text-secondary mb-4">A lighter way to take a break.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">900 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Green%20tea">Choose <span class="visually-hidden">Green tea</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" data-category="dessert">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/coffee4.jpg" alt="Berry cheesecake" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">SOMETHING SWEET</p>
+<h3 class="h4 fw-semibold">Berry cheesecake</h3>
+<p class="text-secondary mb-4">A bright finish to your coffee ritual.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,800 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Berry%20cheesecake">Choose <span class="visually-hidden">Berry cheesecake</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-sm-6 col-lg-4" data-category="dessert">
+<article class="card border-0 h-100 overflow-hidden product-card">
+<div class="product-image">
+<img class="card-img-top" src="images/coffee8.jpg" alt="Carrot cake" loading="lazy">
+</div>
+<div class="card-body p-4 d-flex flex-column">
+<p class="eyebrow small mb-2">SOMETHING SWEET</p>
+<h3 class="h4 fw-semibold">Carrot cake</h3>
+<p class="text-secondary mb-4">Comfort, down to the last crumb.</p>
+<div class="d-flex justify-content-between align-items-center mt-auto gap-2">
+<span class="fw-semibold">1,600 ₸</span>
+<a class="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" href="contact.html?coffee=Carrot%20cake">Choose <span class="visually-hidden">Carrot cake</span> <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+<p class="small text-secondary mt-4">Espresso, cappuccino and latte prices are from our original menu. Tea and dessert prices are illustrative for this student project.</p>
+</section>
+<section class="container py-5">
+<div class="row g-4">
+<div class="col-lg-6">
+<div class="rounded-5 bg-white p-4 p-sm-5 h-100">
+<p class="eyebrow mb-3">KEEP IT SIMPLE</p>
+<h2 class="section-title mb-4">A cup for every mood.</h2>
+<div class="table-responsive">
+<table class="table align-middle">
+<caption>Our original coffee selection</caption>
+<thead>
+<tr>
+<th scope="col">Coffee</th>
+<th scope="col">Size</th>
+<th scope="col" class="text-end">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Espresso</th>
+<td>Small</td>
+<td class="text-end">900 ₸</td>
+</tr>
+<tr>
+<th scope="row">Cappuccino</th>
+<td>Medium</td>
+<td class="text-end">1,400 ₸</td>
+</tr>
+<tr>
+<th scope="row">Latte</th>
+<td>Large</td>
+<td class="text-end">1,700 ₸</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="rounded-5 dark-panel p-4 p-sm-5 h-100">
+<p class="eyebrow text-white-50 mb-3">MAKE IT YOURS</p>
+<h2 class="section-title mb-3">Your coffee.<br>Your way.</h2>
+<p class="text-white-75 mb-4">Have a question about ingredients or a favorite combination? Let’s talk.</p>
+<a href="contact.html" class="btn btn-light rounded-pill px-4">Ask us ↗</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-top py-5 mt-5">
+<div class="container">
+<div class="row gy-4 align-items-start">
+<div class="col-md-5">
+<a href="index.html" class="text-decoration-none text-dark fw-bold fs-4">QALA COFFEE<span class="text-secondary">.</span>
+</a>
+<p class="text-secondary mt-2 mb-0">A little pause. A better day.</p>
+</div>
+<div class="col-sm-6 col-md-3">
+<p class="small fw-semibold mb-2">EXPLORE</p>
+<a class="footer-link d-block mb-2" href="menu.html">Our menu</a>
+<a class="footer-link d-block" href="about.html">Our story</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<p class="small fw-semibold mb-2">COME SAY HELLO</p>
+<p class="text-secondary mb-2">Astana, Kazakhstan</p>
+<a class="footer-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<div class="border-top mt-4 pt-4 d-flex flex-wrap justify-content-between gap-2 small text-secondary">
+<span>© 2026 QALA Coffee · Student project</span>
+<span>Survae · Yelsultan Tashkaraev &amp; Nurzhan Zholaman · SE-2515</span>
+</div>
+</div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js">
+</script>
+<script src="js/app.js">
+</script>
+<dialog id="subscribeDialog" aria-labelledby="subscribeTitle"><div class="p-4 p-sm-5"><button class="btn-close float-end" type="button" data-close-subscribe aria-label="Close subscription form"></button><p class="eyebrow">THE QALA LETTER</p><h2 id="subscribeTitle" class="h2">A little coffee news.</h2><p class="text-secondary">Join our newsletter demo.</p><form id="subscribeForm" novalidate><label class="form-label" for="subscribeEmail">Email address *</label><input id="subscribeEmail" name="email" type="text" inputmode="email" class="form-control py-3" placeholder="you@example.com" autocomplete="email" aria-describedby="subscribeError"><p id="subscribeError" class="field-error" aria-live="polite"></p><button type="submit" class="btn btn-dark rounded-pill w-100">Subscribe</button><p id="subscribeResult" class="mt-3 mb-0" role="status"></p></form></div></dialog>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>
