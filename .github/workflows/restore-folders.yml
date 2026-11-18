@@ -1,0 +1,42 @@
+name: Restore archive folders
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/restore-folders.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Restore original archive paths
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audio css docs/screenshots images js vendor
+          for f in bootstrap.bundle.min.js bootstrap.min.css jquery-4.0.0.min.js; do
+            if [ -f "$f" ]; then git mv "$f" "vendor/$f"; fi
+          done
+          for f in *.css; do [ ! -f "$f" ] || git mv "$f" "css/$f"; done
+          for f in *.js; do [ ! -f "$f" ] || git mv "$f" "js/$f"; done
+          for f in *.jpg favicon.svg; do [ ! -f "$f" ] || git mv "$f" "images/$f"; done
+          for f in *.png; do [ ! -f "$f" ] || git mv "$f" "docs/screenshots/$f"; done
+          for f in api-verification.txt layout-results.json static-results.json test-results.json; do
+            if [ -f "$f" ]; then git mv "$f" "docs/$f"; fi
+          done
+          if [ -f coffee-chime.wav ]; then git mv coffee-chime.wav audio/coffee-chime.wav; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'Restore original archive folder structure'
+            git push origin HEAD:main
+          fi
+      - name: Rebuild GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/Elsul2007-debug/QALA-Coffee-Final/pages/builds
